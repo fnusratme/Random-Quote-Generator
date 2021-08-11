@@ -1,0 +1,103 @@
+body {
+   background-color: #444444;
+   color:  #444444;
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size: auto; /* background-size: auto helped to make image responsive in mobile devices */
+   background-position: center;
+   background-image: url("https://i.imgur.com/cpWQa96.jpg");
+   background-attachment:fixed;/*to keep back image from moving with new quotes loading*/
+  backdrop-filter: blur(0.5px);
+  
+}
+  h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 65px;
+  padding:10px 20px;
+ /*no color for fonts defined, to pickup color wheel*/
+}
+
+.quote-box {
+  font-family: 'Cormorant', serif;
+  font-weight: 900;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 7%;
+  padding: 53px;
+  background: white;
+  background: linear-gradient(350deg, #e3c9a8 8%, #ffffff 48%, #ffffff 100%);
+  text-align: center;
+  width: 550px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #e3c9a8;
+  border-radius: 70px 100px 11px 100px;
+}
+
+.quote-box:hover {
+  opacity: none;
+  position: static;
+  top: -2px;
+  left: -72px;
+  box-shadow: 1px 1px 3px 3px lightgrey;
+}
+
+#quote {
+  font-family: 'Cormorant', serif;
+  font-weight: 900;
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.author {
+  font-size: 18px;
+  text-align: right;
+  position: relative;
+}
+
+button {
+  height: 30px;
+  padding: 5px;
+  width: 95px;
+  background-color: #444444;
+  border: none;
+  border-radius: 60px 60px;
+  color: white;
+  position: relative;
+  left: -70px;
+  transition: 1s;
+}
+
+button:hover {
+  opacity: 0.9;
+  position: relative;
+  top: -2px;
+  left: -72px;
+  box-shadow: 2px 2px 2px black;
+}
+
+#refresh{
+  width: 110px;
+  position: relative;
+  left: 80px;
+}
+
+#refresh:hover {
+  position: relative;
+  top: -2px;
+  left: 78px;
+  box-shadow: 2px 2px 2px black;
+}
+
+#button-text {
+  color: #DDDDDD;
+}
+
+ @media (max-width: 768px) {
+  .quote-box {
+    width: 100%;
+   } }
